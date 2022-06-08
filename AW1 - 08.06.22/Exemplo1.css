@@ -1,0 +1,56 @@
+/*body
+{
+    /*font-family: helvetica, currier;
+    color: blue;
+    width: 80%;
+    margin: auto;
+    background-image: url();
+    background-attachment: fixed; /* a imagem não mexe quando rolada*/
+    /*background-size: 300px 500px; /*tamanho da imagem altura e largura*/
+    /*background-repeat: no-repeat; = não repete imagem do fundo*/
+    /*background-repeat: repeat; = repete imagem do fundo*/
+    /*background-repeat: repeat-y; = repete imagem do fundo paralelo ao eixo x*/
+    /*background-repeat: repeat-x; = repete imagem do fundo paralelo ao eixo y*
+}*/
+
+#exemplo1
+{
+    border: 1px solid black;
+    background-image: url(https://themaindamie.files.wordpress.com/2013/04/319264.jpg?w=620);  
+    background-position:right bottom, left top; 
+    background-repeat: no-repeat, repeat;
+    padding: 15px ;
+}
+
+#exemplo2
+{
+    border: 1px solid black;
+    background-image: url(https://themaindamie.files.wordpress.com/2013/04/319264.jpg?w=620), url(https://coloring.photos/wp-content/uploads/The-Simpsons.png) ;  
+    background-position:right bottom, left top; 
+    background-repeat: no-repeat, repeat-x ;
+    padding: 15px ;
+}
+
+#exemplo3
+{
+    background-image: url(https://themaindamie.files.wordpress.com/2013/04/319264.jpg?w=620);
+    border: 1px solid black;  
+    background-repeat: no-repeat;
+    padding: 15px ;
+    background-size: 100px 80px;
+}
+
+.div1{border: 1px solid black; height: 150px; width: 180px; background-image: url( https://themaindamie.files.wordpress.com/2013/04/319264.jpg?w=620); background-repeat: no-repeat ; } 
+
+.div2{ border: 1px solid black ; height: 150px ; width: 180px ; background-image: url( https://coloring.photos/wp-content/uploads/The-Simpsons.png); background-repeat: no-repeat ; background-size : contain ;}
+
+.div3
+{ border: 1px solid black ; height: 150px ; width: 180px ; background-image: url( https://coloring.photos/wp-content/uploads/The-Simpsons.png); background-repeat: no-repeat ; background-size : cover;}
+
+#exemplo1
+{
+    border: 1px solid black;
+    background-image: url(https://themaindamie.files.wordpress.com/2013/04/319264.jpg?w=620) left top no-repeat, url(https://coloring.photos/wp-content/uploads/The-Simpsons.png)right bottom no-repeat url(https://lumiere-a.akamaihd.net/v1/images/original_1628718691_los-simpson---star_-_3_e73a2761.jpeg?region=0,379,1300,732) ; 
+    background-size: 50px 130px auto;  
+    padding: 15px ;
+}

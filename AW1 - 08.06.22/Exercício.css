@@ -1,0 +1,88 @@
+body
+{
+    background-image: url(https://papers.co/wallpaper/papers.co-va18-blue-green-patterns-23-wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0px;
+}
+
+.NavBar
+{
+    font-family: 'Karla', sans-serif;
+    color:#fff;
+    background-color: #35BE6B;
+    padding: 1%;
+    
+}
+
+h1
+{
+    margin: 0px;
+}
+
+#Sala1
+{
+    border: 1px solid rgb(2, 2, 92);
+    margin-top: 20px;
+    background-image: url(https://lrodrigo.sgs.lncc.br/wp/wp-content/uploads/2018/04/HTML-Banner-03.jpg), url(https://profissionais.tarkett.pt/media/img/M/THH_24579065_24580065_24581065_24600065_24564065_24577065_24578065_001.jpg) ;  
+    background-position:right bottom, left top; 
+    background-repeat: no-repeat, repeat;
+    padding: 15px ;
+
+}
+
+.NavButton
+{
+    transition-duration: 0.4s;
+    background-color: #e7e7e7; color: rgb(5, 5, 84);
+    border-radius: 8px;
+    display: inline;
+}
+
+.NavButton:hover {
+    background-color: #4CAF50; /* Green */
+    color: white;
+}
+
+.ButtonSala
+{
+transition-duration: 0.4s;
+  padding: 3px 5px;
+  font-size: 20px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: red;
+  border: none;
+  border-radius: 15px;
+}
+
+.ButtonSala:hover
+{
+    box-shadow: 0 5px rgba(106, 13, 13, 0.291);
+
+}
+
+.ButtonSala2
+{
+transition-duration: 0.4s;
+  padding: 3px 5px;
+  font-size: 20px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: green;
+  border: none;
+  border-radius: 15px;
+}
+
+.ButtonSala2:hover:after
+{
+    content: "entrar?";
+    box-shadow: 0 5px rgba(106, 13, 13, 0.291);
+
+}
