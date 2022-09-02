@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Calculadora.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <section>
+        <div class="wrapper">
+            <h2>CALCULADORA</h2>
+            <input id="numero1" name="numero1" type="text"> 
+            <input id="numero2" name="numero2" type="text">
+    
+            <div class="inputsop">
+                <input id="operacao1" name="marcador" type="radio" value="add"><b>+ </b> 
+                <input id="operacao2" name="marcardor" type="radio" value="subtair"><b>-</b> 
+                <input id="operacao3" name="marcardor" type="radio" value="multiplicar"><b>x</b> 
+                <input id="operacao4" name="marcardor" type="radio" value="dividir"><b>%</b>
+            </div>
+    
+    
+    
+            <button onclick="outcome()" type="button">Calcular</button>
+
+        </div>
+    </section>
+
+
+
+    <script>
+        	function outcome() { 
+	           let n1 = Number(document.getElementById("numero1").value);
+	           let n2 = Number(document.getElementById("numero2").value);
+	           var resp = 0;
+	           
+	           if (document.getElementById("operacao1").checked){
+	               resp = n1 + n2;
+	           }
+	           else if (document.getElementById("operacao2").checked){ 
+	               resp = n1 - n2;
+	           }
+	           else if (document.getElementById("operacao3").checked){
+	               resp = n1 * n2;
+	           }
+	           else{
+	               resp = n1 / n2;
+	           }
+	           document.getElementById("resultArea").innerHTML = " Result : "+ String(resp);    
+	       } 
+    </script>
+</body>
+</html>
