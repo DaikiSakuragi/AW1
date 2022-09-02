@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="AvaliacaoAW13Bim.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Document</title>
+</head>
+<body>
+    <section class="Conteudo" id="Formulário">
+        <h1>Calcular Media</h1>
+         <form action="#" method="post" >
+            <div class="form-group">
+                <label for="Nome">Nome</label>
+                <input type="text" name="text" id="text" placeholder="digite o nome do(a) Aluno(a)">
+            </div>
+
+            <div class="form-group">
+                <label for="Nota1">Nota 1° Bimestre</label>
+                <input type="text" name="text" id="text1" placeholder="digite a nota do 1° bimestre">
+            </div>
+
+            <div class="form-group">
+                <label for="Nota1">Nota 2° Bimestre</label>
+                <input type="text" name="text" id="text2" placeholder="digite a nota do 2° bimestre">
+            </div>
+
+            <div class="form-group">
+                <label for="Nota1">Nota 3° Bimestre</label>
+                <input type="text" name="text" id="text3" placeholder="digite a nota do 3° bimestre">
+            </div>
+
+            <div class="form-group">
+                <button onclick="outcome()" type="button">Calcular</button>
+            </div>
+
+            <div class="form-group">
+                <a href="AvaliacaoAW13Bim.html"><button type="button">Tentar Novamente</button></a>
+            </div>
+
+
+           
+
+            
+         </form>
+    </section>
+
+    <script>
+
+        function outcome(){
+            let name = document.getElementById("text").value;
+            let n1 = Number(document.getElementById("text1").value);
+            let n2 = Number(document.getElementById("text2").value);
+            let n3 = Number(document.getElementById("text3").value);
+            let media = (n1 + n2 + n3) / 3;
+
+            if(media >= 6)
+                alert("Aluno(a) " + name + " com media " + media + " Está Aprovado!");
+            else
+                alert("Aluno(a) " + name + " com media " + media + " Está Reprovado!");
+        }
+    </script>
+</body>
+</html>
