@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let linhas = parseInt(prompt("Digite a quantidade de linhas da matriz"));
+        let colunas = parseInt(prompt("Digite a quantidade de colunas da matriz"));
+        let sum = 0;
+        alert("Criar uma matriz de " + linhas + "linhas por " + colunas + "colunas")
+
+         const array = [];
+             for(let i = 0; i < linhas; i++){
+                 array[i] = [];
+                for (let j = 0; j < colunas; j++){
+                    array[i][j] = ' ';
+                }
+        }
+        
+        for(let l = 0; l < linhas; l++){
+            for(let c  = 0; c < colunas; c++){
+                array[l][c] = parseInt(prompt("Digite uma valor para inserir na matriz: "));
+            }
+        }
+
+        let valores = ' ';
+        for(let l = 0; l < linhas; l++){
+            for(let c  = 0; c < colunas; c++){
+                if(c < colunas - 1){
+                    valores += array[l][c] + "\t\t";
+                } else{
+                    valores += array[l][c] + "\n"
+                }
+             }
+        }
+
+        for(let i = 0; i < linhas; i++){
+            for (let j = 0; j < colunas; j++){
+                if(i == j){
+                    sum += array[i][j];
+                } else{
+                    sum += array[i][j];
+                }
+                
+            }
+
+        }
+
+        alert(valores);
+        alert("Soma dos valores da matriza: " + sum);
+    </script>
+</body>
+</html>
