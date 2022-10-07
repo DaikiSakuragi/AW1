@@ -10,7 +10,12 @@
     <script>
         let linhas = parseInt(prompt("Digite a quantidade de linhas da matriz"));
         let colunas = parseInt(prompt("Digite a quantidade de colunas da matriz"));
-        let sum = 0;
+        let sum1 = 0;
+        let sum2 = 0;
+        let sum3 = 0;
+        let sum4 = 0;
+        let sum5 = 0;
+        
         alert("Criar uma matriz de " + linhas + "linhas por " + colunas + "colunas")
 
          const array = [];
@@ -38,16 +43,29 @@
              }
         }
 
-        for(let i = 0; i < linhas; i++){
-            for (let j = 0; j < colunas; j++){
-                if(i == linhas){
-                    sum += array[i][j];
-                }
-            }
+        for(let l = 0; l < linhas; l++){
+            for(let c  = 0; c < colunas; c++){
+                if(l < 1){
+                    sum1 += array[l][c] ;
+                } 
+                else if(l < 2){
+                    sum2 += array[l][c] ;
+                } 
+                else if(l < 3){
+                    sum3 += array[l][c] ;
+                } 
+                else if(l < 4){
+                    sum4 += array[l][c] ;
+                } 
+                else{
+                    sum5 += array[l][c] ;
+                } 
+                
+             }
         }
 
         alert(valores);
-        alert("Soma das linhas da matriz: " + sum);
+        alert("Soma das linhas da matriz: " + sum1 + "," + sum2 + "," + sum3 + "," + sum4 + "," + sum5);
     </script>
 </body>
 </html>
