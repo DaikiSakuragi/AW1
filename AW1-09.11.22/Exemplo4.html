@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<style>
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,400);
+
+*  {  margin:0; padding:0;}
+
+body     {  background:url(http://img.tapatalk.com/d/12/10/31/6yby7usy.jpg) center center;
+            }
+
+#container { background:url(https://lh3.ggpht.com/PQXITv6h0hTZLqlvlni7RSN2rE70QytYeNAtngBc3wKQuq8g5gH28EUDqYKgCPkWfQ=h900-rw) no-repeat;
+      background-size:500px 293px;
+      width:500px;
+      height:293px;
+      margin:25px auto;}
+
+.tooltip   {  width:16px;
+              height:16px;
+              border-radius:10px;
+              border:2px solid #fff;
+              position:absolute;
+              background:rgba(255,255,255,.5);}
+  
+
+.tooltip:hover
+           {  -webkit-animation-play-state: paused;}
+
+.tooltip:hover .info {visibility:visible;}
+  
+ #first   {   margin: 200px 0 0 200px !important;}
+
+#second   {   margin:75px 0 0 52px !important;}
+
+#third   {   margin:158px 0 0 425px !important;}
+              
+.info     {   width:200px;
+              padding:10px;
+              background:rgba(255,255,255,1);
+              border-radius:3px;
+              position:absolute;
+              visibility:hidden;
+              margin:-105px 0 0 -100px;
+              box-shadow:0 0 50px 0 rgba(0,0,0,.5);}
+
+h3         {  font-family: 'Roboto', sans-serif;
+              font-weight:100;
+              font-size:20px;
+              margin:0 0 5px 0;}
+
+p           {  font-family: 'Roboto', sans-serif;
+                font-weight:400;
+  font-size:12px;}
+
+.arrow {
+  position:absolute;
+  margin:10px 0 0 88px;
+  width: 0; 
+  height: 0; 
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #fff;
+}
+</style>
+</head>
+
+<body>
+<div id="container">
+  <div class="tooltip" id="first">
+    <div class="info">
+      <h3>Awesome Display</h3>
+      <p>The world's highest-resolution 7" tablet puts over 2.3 million pixels in the palm of your hand. </p>
+      <div class="arrow"></div>
+    </div>
+  </div>
+  
+  <div class="tooltip" id="second">
+    <div class="info">
+      <h3>Stay Connected</h3>
+      <p>Hangout and share your world with those that matter the most to you in glorious high definition. </p>
+      <div class="arrow"></div>
+    </div>
+  </div>
+  
+   <div class="tooltip" id="third">
+    <div class="info">
+      <h3>Powerful Portability</h3>
+      <p>Delivering the game and applications that help you have more fun and get more done. </p>
+      <div class="arrow"></div>
+    </div>
+  </div>
+  
+</div>
+</body>
+</html>
